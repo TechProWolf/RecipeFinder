@@ -7,7 +7,7 @@ RecipeFinder is an application that allows users to search for recipes based on 
 1. Clone the RecipeFinder repository:
 
    ```shell
-   git clone https://github.com/your-username/RecipeFinder.git
+   git clone https://github.com/TechProWolf/RecipeFinder.git
 
 2. Navigate to the project directory:
 
