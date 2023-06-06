@@ -1,0 +1,16 @@
+<!-- templates/results.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RecipeFinder - Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>RecipeFinder - Results</h1>
+    <ul>
+        {% for recipe in recipes %}
+            <li><a href="/recipe/{{ recipe.id }}">{{ recipe.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RecipeFinder</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>RecipeFinder</h1>
+    <form action="/search" method="post">
+        <label for="ingredients">Ingredients:</label>
+        <input type="text" name="ingredients" id="ingredients" required>
+        <br>
+        <label for="dietary_preference">Dietary Preference:</label>
+        <select name="dietary_preference" id="dietary_preference">
+            <option value="">Any</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="glutenFree">Gluten-Free</option>
+        </select>
+        <br>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
